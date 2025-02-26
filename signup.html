@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title> Capital one Bank</title>
+            
+            <link rel="stylesheet" href="style.css">
+           
+
+            <script src="capital.js"></script>
+
+        </head>
+            <body>
+                <nav class="navbar navbar-expand-lg bg-body-tertiary bg-white">
+                    <div class="container-fluid">
+                      <img src="image/logosa.png" class="imagelogo"/>
+                        
+                      
+                      <div  id="navbarSupportedContent">
+
+                        <div class="dropdown">
+                          <img class="flag" alt="united state" 
+                          src="image/usaa.png"/>
+                          
+                          <div class="caret"></div>
+                          <ul class="menu">
+                            <li data val="US">United States</li>
+                          </ul>
+                      </div>
+                          
+                          <select name="" id=""class="radio">
+                            <option value="en"> English</option>
+                            <option value="ar"> Arabic</option>
+                          
+                          </select>
+
+
+
+                            </div>
+
+
+
+                            
+                            </div>
+                       
+                      </div>
+                    </div>
+                  </nav>
+
+
+
+<div class="cards" style='height: 850px;'>
+  
+  <div class="inner">
+
+    <img src="image/logosa.png" class="imagelog"/>
+    <p class="p"> Sign up</p>
+
+    <form action="register.php" method='post' 
+    enctype="multipart/form-data">
+      <div>
+
+
+
+      <label class="labels"> Fullname</label>
+      <input  class="input"
+      name="fname" type="name" 
+      value=""
+       placeholder="Enter your fullname"/>
+
+
+       <label class="labels"> Username</label>
+       <input  class="input"
+       name="uname" type="name" value=""
+        placeholder="Enter your username"/>
+
+
+        <label class="labels email"> Email Address</label>
+       <input  class="input"
+       name="email" type="email" value=""
+        placeholder="Enter your username"  />
+
+
+
+        <label class="labels"> Password</label>
+       <input  class="input"
+       name="pass" id="password"
+       type="password" maxlength="11"
+        placeholder="Enter your password"/>
+        <span class="eye-icon"
+        style='position: absolute;
+        top: 55%;'
+         onclick="togglePassword()"> </span>
+
+
+        <label class="labels"> Account Number</label>
+       <input  class="input"
+       name="account" 
+       type="text" 
+        placeholder="Enter your account"/>
+       
+
+        
+        <label class="labels"> Balance</label>
+       <input  class="input"
+       name="balance" 
+       type="text" 
+        placeholder="Enter your balance"/>
+       
+
+
+        <input  class="image-input"
+        name="image" type="file" value=""/>
+
+
+
+        <button type="submit" id="spin-button"
+         class="buttoncolored">
+  Sign up
+  <span class="spinner-border spinner-border-sm" 
+  id="spinner" name='signUp' style="display: none;"></span>
+</button>
+
+        
+
+
+
+
+
+
+
+    </form>
+                      
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+            </body>
+
+            <script src='signup.js'></script>
+            
+</html>

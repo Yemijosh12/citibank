@@ -1,0 +1,486 @@
+.imagelogo{
+    width: 130px;
+    height: 45px;
+    }
+    
+    body{
+    
+        
+        background-color: #F4F4F4;
+        font-family: Work Sans;
+        justify-content: center;
+        
+    }
+    
+    
+    .dropdown{
+        
+        position: relative;
+        right: 60px; 
+        top: 10px;  
+    }
+    
+    .radio{
+        position: relative;
+        bottom: 20px;
+        border: none transparent;
+    }
+    
+    
+    .dropdown * {
+        box-sizing: border-box;
+    }
+    
+    .select{
+        background: #2a2f3b;
+        color: #fff;
+        display: flex;
+        justify-content: space-around;
+        align-items: left;
+        border-radius:2px #2a2f3b solid;
+        padding: 1rem;
+        cursor: pointer;
+        transition: background 0.3s;
+    
+    }
+    
+    .select > div:nth-child(1) {
+        display: flex;
+        align-items: center;
+    }
+    
+    .flag{
+        
+        width: 1.7em;
+    }
+    
+    .selected {
+        margin-right: 0.8em;
+    }
+    
+    .select-clicked {
+        border: 2px #26489a solid;
+        box-shadow: 0 0 0.8em #26489a;
+    }
+    
+    .select:hover{
+        background: #323741;
+    }
+    
+    .caret{
+        width: 10px;
+        height: 10px;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 6px solid #000000;
+        transition: 0.3s;
+        position: relative;
+        left: 35px;
+       bottom: 13px;
+    }
+    
+    .caret-rotate{
+        transform: rotate(180deg);
+    }
+    
+    .menu{
+        list-style: none;
+        padding: 0.2em 0.5em;
+        background: #323741;
+        box-shadow: 0.5em 1em rgba (0,0,0.2);
+        border-radius: 0.5em;
+        color: #9fa5b5;
+        position: absolute;
+        top: 3em;
+        left: 50%;
+        width: 100%;
+        max-height: 350px;
+        overflow-y:scroll;
+        transition: translateX(-50%);
+        opacity:0;
+        display: none;
+        transition: 0.2s;
+        z-index:1;
+    }
+    
+    .menu{
+        padding: 0.7em 0.5em;
+        margin: 0.3em 0;
+        border-radius: 0.5em;
+        cursor: pointer;
+    }
+    
+    .menu li:hover{
+        background: #2a2d35;
+    }
+    
+    .active{
+        background: #23242a;
+    }
+    
+    .menu-open{
+        display: block;
+        opacity: 1;
+    }
+    
+    @media screen and (max-width: 600px) {
+        .dropdown{
+            font-size: 13px;
+        }
+    }
+
+    
+.cards{
+    box-sizing: border-box;
+    border: transparent;
+    width: 100%;
+    height: 294px;
+    background-color: #002D87;
+    position: relative;
+    top: 20px;
+    
+
+}
+
+
+.inner{
+justify-content: center;
+align-items: center;
+text-align: center;
+
+}
+ 
+.p{
+ padding: 20px;
+ font-size: 18px;
+ color: white;
+ opacity: 80%;
+}
+
+.wname{
+    padding: 20px;
+ font-size: 20px;
+ color: white;
+ font-weight: bold;
+ position: relative; padding: 20px;
+ gap: 50px;
+ top: -50px;
+}
+
+.img{
+width: 45px;
+height: 45px;
+border-radius: 60px;
+position: relative;
+top: -16px;
+left: -15px;
+
+}
+
+.img-cards{
+    box-sizing: border-box;
+    border: 2px solid white;
+    width: 60px;
+    height: 60px; padding: 20px;
+    background-color: #002d8700;
+    position: relative;
+    left: 80%;
+    border-radius: 60px;
+    top: -130px;
+    align-items: center;
+    margin: 0;
+}
+
+.card-img{
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    top: -108px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.acc{
+    padding: 48px;
+    font-size: 14px;
+    opacity: 73%;
+    position: relative;
+    top: -365px;
+    color: white;
+}
+
+.bal{
+    padding: 48px;
+    font-size: 33px;
+    position: relative; 
+       top: -470px;
+    color: white;
+}
+
+.acct{
+    padding: 20px;
+    font-size: 13px;
+    opacity: 73%;
+    padding: 48px;
+    position: relative;
+    top: -570px;
+    color: white;
+}
+
+.card-name{
+    padding: 20px;
+    font-size: 14px;
+    opacity: 47%;
+    padding: 48px;
+    position: relative;
+    top: -620px;
+    color: rgb(255, 255, 255);
+}
+
+.img-text{
+width: 30px;
+height: 19px;
+position: relative;
+left: 5px;
+
+}
+
+#eye-icon{
+cursor: pointer;
+}
+
+.card-icon{
+        box-sizing: border-box;
+        border: transparent;
+        padding: 20px;
+        width: 377px;
+        height: 270px;
+        background-color: #ffffff;
+        position: relative;
+        top: 130px;
+        border-radius: 8px;
+        margin: 0 auto;
+    
+    }
+    .line{
+        position: relative;
+        top: -600px;
+    }
+
+
+    .nameicon{
+        font-size: 12px;
+        position: relative;
+        left: -10px;
+
+    }
+
+    .iconp2{
+        width: 39.29px;
+        height: 32.723px;
+        
+    }
+    .iconp3{
+        width: 41.04px;
+        height: 34.21px;
+        
+    }
+    .iconp{
+        width: 27.72px;
+        height: 32.31px;
+        
+    }
+
+    .icon1{
+        padding: 33px;
+    }
+
+    .icon2{
+        padding: 30px;
+        position: relative;
+        top: -125px;
+        left: 110px;
+    }
+
+    .icon3{
+        padding: 30px;
+        position: relative;
+        top: -259px;
+        left: 230px;
+    }
+
+    .icont{
+        position: relative;
+        top: -300px
+    }
+
+.link{
+    color: black;
+}
+
+
+    .icona{
+        position: relative;
+        top: -20px
+    }
+
+    .iconp4{
+        width: 35.14px;
+        height: 32.31px;
+        
+    }
+    .iconp5{
+        width: 36.41px;
+        height: 33.71px;
+        
+    }
+    .iconp6{
+        width: 37.53px;
+        height: 34.74px;
+        
+    }
+
+    .proftext{
+        display: flex;
+        justify-content: center;
+        font-size: 13px;
+        font-weight: bold;
+        color: #0070A8;
+        position: relative;
+        top: -600px
+    }
+
+
+    .card-icon2{
+        box-sizing: border-box;
+        border: transparent;
+        padding: 20px;
+        width: 377px;
+        height: 650px;
+        background-color: #ffffff;
+        position: relative;
+        bottom: -150px;
+        border-radius: 8px;
+        margin: 0 auto;
+    }
+
+ .moni{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .bkname{
+    font-size: 13px;
+    position: relative;
+    top: -30px;
+    left: 15px;
+ }
+
+ .arono{
+    width: 6px;
+    height: 13px;
+ }
+
+ .amont{
+    font-size: 13px;
+    color: #0070A8;
+    opacity: 80%;
+    position: relative;
+    top: -100px;
+    left: 250px;
+ }
+
+ .numb{
+    font-size: 8px;
+    color: #707070;
+    position: relative;
+    top: -100px;
+    left: 250px;
+ }
+
+ .date{
+    font-size: 10px;
+    color: #707070;
+    position: relative;
+    top: -15px;
+    left: 15px;
+ }
+
+ .moni{
+    position: relative;
+    top: 10px;
+    left: 11px;
+ }
+
+ .lines{
+    position: relative;
+    top: -80px;
+    opacity: 80%;
+ }
+
+ .moni2{
+    position: relative;
+    top: -70px;
+    left: 11px;
+ }
+
+ .lines1{
+    position: relative;
+    top: -140px;
+    opacity: 80%;
+ }
+
+
+ .moni3{
+    position: relative;
+    top: -130px;
+    left: 8px;
+ }
+ .moni4{
+    position: relative;
+    top: -193px;
+    left: 11px;
+ }
+ .moni5{
+    position: relative;
+    top: -245px;
+    left: 11px;
+ }
+ .moni6{
+    position: relative;
+    top: -300px;
+    left: 11px;
+ }
+
+ .moni7{
+    position: relative;
+    top: -350px;
+    left: 11px;
+ }
+
+ .lines3{
+    position: relative;
+    top: -350px;
+    opacity: 80%;
+ }
+ .lines4{
+    position: relative;
+    top: -410px;
+    opacity: 80%;
+ }
+ .lines5{
+    position: relative;
+    top: -470px;
+    opacity: 80%;
+ }
+
+ .lines6{
+    position: relative;
+    top: -510px;
+    opacity: 80%;
+ }
+
+
