@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+            
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+	
+
+	<link rel="stylesheet" href="new.css">
+           
+
+		   <script>
+const heading =
+document.getElementById('heading');
+const toggleBtn=
+document.getElementById('toggle-btn');
+const eyeImage = 
+document.getElementById('eye-Image');
+
+if(!heading || !toggleBtn || !eyeImage){
+  console.error('Failed to find required DOM elements');
+}
+
+toggleBtn.addEventListener('click', () =>{
+   try{
+    if(heading.classList.contains('hidden')){
+      heading.textContent='$22,679,200.00';
+      heading.classList.remove('hidden');
+      eyeImage.src='png.png';
+    }else{
+      heading.textContent = '*****';
+      heading.classList.add('hidden');
+      eyeImage.src='png2.png';
+    }
+   }catch (error){
+    console.erro('Error toggle heading visibility:', error);
+   }
+ 
+});
+       </script>
+
+<style>
+  #heading{
+    transition: opacity 0.3s;
+  }
+
+  .hidden{
+    opacity: 0;
+  }
+
+ 
+
+  
+</style>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-lg bg-body-tertiary bg-white">
+                    <div class="container-fluid">
+                      <img src="image/citi.png" class="imagelogo"/>
+                        
+                      
+                      <div  id="navbarSupportedContent">
+
+                        <div class="dropdown">
+                          <img class="flag" alt="united state" 
+                          src="image/usaa.png"/>
+                          
+                          <div class="caret"></div>
+                          <ul class="menu">
+                            <li data val="US">United States</li>
+                          </ul>
+                      </div>
+                          
+                          <select name="" id=""class="radio">
+                            <option value="en"> English</option>
+                            <option value="ar"> Arabic</option>
+                          
+                          </select>
+
+
+
+                            </div>
+
+
+
+                            
+                            </div>
+                       
+                      </div>
+                    </div>
+                  </nav>
+
+
+
+<div class='cards'>
+
+<p class='p'> Hello </p>
+<h1 class='wname'>Geared James Butler </h1>
+
+<div class='img-cards'>
+<img src='image/Untitled-1.png' class='img'>
+</div>
+
+<img src='image/carda.png' class='card-img'>
+
+<p class='acc'> Account No: 220345****** </p>
+
+<h1 id='heading' class='bal'> *****
+
+  <button id="toggle-btn" class='img-btn' style='  
+    border-radius: 30px;width: 30px;
+  height: 19px; left: -20px; bottom: 80px;
+  cursor: pointer;border: transparent;
+   background: none;'>
+<a href="dashboard.html">
+    <img src='png2.png' id="eye-Image" 
+  class='img-text'style='width: 30px;
+  height: 19px; left: 94px; bottom: 40px;
+  cursor: pointer;'>
+  </button></a></h1>
+
+<p class='acct'> Account Balance </p>
+<h1 class='card-name'> Geared James Butler </h1>
+</div>
+
+
+<div class='card-icon'>
+
+<div class='icona'>
+
+<a href='#'class='link'>
+<div class='icon1'>
+<img src='image/pay.png' class='iconp'>
+<p class='nameicon'> Paybills</p>
+</div></a>
+
+<a href='transfer.html'class='link'>
+<div class='icon2'>
+<img src='image/trans.png' class='iconp2'>
+<p class='nameicon'> Transfer</p>
+</div></a>
+
+
+<div class='icon3'>
+<a href='#'class='link'>
+<img src='image/zel.png' class='iconp3'>
+<p class='nameicon'> Send Zeller </p>
+</div></a>
+
+<a href='deposit.html'class='link'>
+<div class='icont'>
+<div class='icon1'>
+<img src='image/depo.png' class='iconp4'>
+<p class='nameicon'> Deposit</p>
+</div></a>
+
+<a href='#'class='link'>
+<div class='icon2'>
+<img src='image/lock.png' class='iconp5'>
+<p class='nameicon'> Lock card</p>
+</div></a>
+
+
+<div class='icon3'>
+<a href='#' class='link'>
+<img src='image/statement.png' class='iconp6'>
+<p class='nameicon'> Statement </p>
+</div></a>
+</div>
+</div>
+
+
+
+
+<hr class='line'>
+
+<a href="profile.html">
+<h1 class='proftext'> View Profile </h1></a>
+</div>
+
+
+
+<div class='card-icon2'style='height: 680px;'>
+
+<h1 style='  font-size: 18px;
+        color: #0070A8;'> Recent Transaction </h1>
+
+<div class='moni0'>
+<img src='image/bluearrow.png' class='arono'/>
+<p class='date'> Feb 25, 2025 </p>
+<h1 class='bkname'> Online Banking transfer </br/>from XXXXX8348 <h1>
+  <h2 class='amont'> $5,000.00 </h2>
+  <h3 class='numb'> $285,022.13 </h3>
+</div>
+
+<hr class='lines'>
+
+<div class='moni2'>
+<img src='image/rredarrow.png' class='arono'/>
+<p class='date'> Jan 30, 2025 </p>
+<h1 class='bkname'> BKOFAMERICA BC 90/14 <h1>
+  <h2 class='amont'> $20,000.00 </h2>
+  <h3 class='numb'> $250,014.15 </h3>
+</div>
+
+<hr class='lines1'>
+
+<div class='moni3'>
+<img src='image/bluearrow.png' class='arono'/>
+<p class='date'> Dec 25, 2024 </p>
+<h1 class='bkname'> Recieve BTC <h1>
+  <h2 class='amont'> $1,026,284.40 </h2>
+  <h3 class='numb'> 21.86393596 BTC </h3>
+</div>
+
+
+
+<div class='moni4'>
+<img src='image/rredarrow.png' class='arono'/>
+<p class='date'> Jun 06, 2024 </p>
+<h1 class='bkname'> Purchase Chick <br/> 
+Fil-A San Diego CA CARD4940 <h1>
+  <h2 class='amont'> $5,000,000 </h2>
+  <h3 class='numb'> $2,022,000 </h3>
+</div>
+
+<hr class='lines3'>
+
+<div class='moni5'>
+<img src='image/bluearrow.png' class='arono'/>
+<p class='date'> Nov 19, 2024 </p>
+<h1 class='bkname'> Check #1057  <h1>
+  <h2 class='amont'> $2,000,000 </h2>
+  <h3 class='numb'> $285,000,205 </h3>
+</div>
+
+<hr class='lines4'>
+
+<div class='moni6'>
+<img src='image/rredarrow.png' class='arono'/>
+<p class='date'> Dec 30, 2023 </p>
+<h1 class='bkname'> Purchase  <h1>
+  <h2 class='amont'> $5,000.00 </h2>
+  <h3 class='numb'> $15,000,000 </h3>
+</div>
+
+<hr class='lines5'>
+
+<div class='moni7'>
+<img src='image/bluearrow.png' class='arono'/>
+<p class='date'> Oct 25, 2023 </p>
+<h1 class='bkname'> Recieved <h1>
+  <h2 class='amont'> $7,000,000 </h2>
+  <h3 class='numb'> $10,022,13 </h3>
+</div>
+
+<hr class='lines6'>
+
+
+
+
+<p style='font-size: 20px; position: relative; 
+top: -430px; left: 130px; color: #0070A8;'> loading... </p>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+<?php }
