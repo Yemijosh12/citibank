@@ -1,5 +1,5 @@
 
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -42,7 +42,19 @@ toggleBtn.addEventListener('click', () =>{
 });
        </script>
 
+<style>
+  #heading{
+    transition: opacity 0.3s;
+  }
 
+  .hidden{
+    opacity: 0;
+  }
+
+ 
+
+  
+</style>
 
 </head>
 <body>
@@ -98,13 +110,19 @@ toggleBtn.addEventListener('click', () =>{
 
 <p class='acc'> Account No: 220345****** </p>
 
-<h1 class='bal'> $22,679,200.00
-<a href="dashboard2.html">
-    <img src='png.png' id="eye-Image" 
+<h1 id='heading' class='bal'> *****
+
+  <button id="toggle-btn" class='img-btn' style='  
+    border-radius: 30px;width: 30px;
+  height: 19px; left: -20px; bottom: 80px;
+  cursor: pointer;border: transparent;
+   background: none;'>
+<a href="dashboard.html">
+    <img src='png2.png' id="eye-Image" 
   class='img-text'style='width: 30px;
-  height: 19px; left: -65px; bottom: 40px;
+  height: 19px; left: 94px; bottom: 40px;
   cursor: pointer;'>
-  </a></h1>
+  </button></a></h1>
 
 <p class='acct'> Account Balance </p>
 <h1 class='card-name'> Geared James Butler </h1>
