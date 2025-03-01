@@ -7,13 +7,54 @@
             
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Home</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
 
 	<link rel="stylesheet" href="new.css">
            
 
-		   <script src="capital.js"></script>
+		   <script>
+const heading =
+document.getElementById('heading');
+const toggleBtn=
+document.getElementById('toggle-btn');
+const eyeImage = 
+document.getElementById('eye-Image');
 
+if(!heading || !toggleBtn || !eyeImage){
+  console.error('Failed to find required DOM elements');
+}
+
+toggleBtn.addEventListener('click', () =>{
+   try{
+    if(heading.classList.contains('hidden')){
+      heading.textContent='$22,679,200.00';
+      heading.classList.remove('hidden');
+      eyeImage.src='png.png';
+    }else{
+      heading.textContent = '*****';
+      heading.classList.add('hidden');
+      eyeImage.src='png2.png';
+    }
+   }catch (error){
+    console.erro('Error toggle heading visibility:', error);
+   }
+ 
+});
+       </script>
+
+<style>
+  #heading{
+    transition: opacity 0.3s;
+  }
+
+  .hidden{
+    opacity: 0;
+  }
+
+ 
+
+  
+</style>
 
 </head>
 <body>
@@ -68,9 +109,20 @@
 <img src='image/carda.png' class='card-img'>
 
 <p class='acc'> Account No: 220345****** </p>
-<h1 class='bal' id='price'> $22,679,200.00
-  <img src='image/png.png' class='img-text'style='width: 30px;
-  height: 19px;'></h1>
+
+<h1 id='heading' class='bal'> $22,679,200.00
+
+  <button id="toggle-btn" class='img-btn' style='  
+    border-radius: 30px;width: 30px;
+  height: 19px; left: -20px; bottom: 80px;
+  cursor: pointer;border: transparent; background: none;'>
+<a href="dashboard2.html">
+    <img src='png.png' id="eye-Image" 
+  class='img-text'style='width: 30px;
+  height: 19px; left: -50px; bottom: 40px;
+  cursor: pointer;'>
+  </button></a></h1>
+
 <p class='acct'> Account Balance </p>
 <h1 class='card-name'> Geared James Butler </h1>
 </div>
